@@ -1,0 +1,26 @@
+cmake_minimum_required(VERSION 3.17)
+project(data_structure C)
+
+set(CMAKE_C_STANDARD 90)
+
+add_executable(data_structure main.c)
+add_executable(seq_list backup/seq_list.c)
+add_executable(doubly_linked_list backup/doubly_linked_list.c)
+add_executable(loop_linked_list backup/loop_linked_list.c)
+add_executable(single_linked_list backup/single_linked_list.c)
+add_executable(LinearList backup/LinearList.c)
+
+add_executable(SeqList SeqList.c)
+add_executable(LinkedList LinkedList.c)
+add_executable(DoublyLinkedList DoublyLinkedList.c)
+add_executable(SeqStack SeqStack.c)
+add_executable(SeqQueue SeqQueue.c)
+add_executable(LinkStack LinkStack.c)
+add_executable(LinkQueue LinkQueue.c)
+add_executable(BinaryTree BinaryTree.c)
+
+add_executable(insertSort sort/insertSort.c)
+add_executable(shellSort sort/shellSort.c)
+add_executable(bubbleSort sort/bubbleSort.c)
+add_executable(quickSort sort/quickSort.c)
+add_executable(heapSort sort/heapSort.c)
